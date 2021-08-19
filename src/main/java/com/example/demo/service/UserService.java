@@ -17,6 +17,10 @@ public class UserService {
 	UserRepository userRepository;
 
 	public UserDto save(UserDto userDto) {
+//		if(userDto.getEmail()==null) {
+//			throw new UpStacCommonException(e);
+//		}
+		
 		User user = new User(userDto);
 		user = userRepository.save(user);
 		userDto = new UserDto(user);

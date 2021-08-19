@@ -7,18 +7,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.dto.TestRequestDto;
-import com.example.demo.service.TestRequestService;
+//import com.example.demo.service.TestRequestService;
 
 @RestController
 @RequestMapping("/v1/test")
 public class TestRequestController {
 
-	@Autowired
-	TestRequestService testRequestService;
+	//@Autowired
+	// TestRequestService testRequestService;
 
 	@PostMapping("/")
 	public TestRequestDto saveTestRequest(@RequestBody TestRequestDto testRequestDto) {
-		return testRequestService.save(testRequestDto);
+		//return testRequestService.save(testRequestDto);
+		return null;
 	}
 
 }

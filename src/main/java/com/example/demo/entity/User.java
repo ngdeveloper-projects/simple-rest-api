@@ -60,6 +60,28 @@ public class User {
 	public User() {
 
 	}
+	
+	
+
+	public User(Long id, String userName, String firstName, String lastName, String mobile, String email,
+			String password, String role, String status, Integer pincode, LocalDateTime createdDt,
+			LocalDateTime updatedDt) {
+		super();
+		this.id = id;
+		this.userName = userName;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.mobile = mobile;
+		this.email = email;
+		this.password = password;
+		this.role = role;
+		this.status = status;
+		this.pincode = pincode;
+		this.createdDt = createdDt;
+		this.updatedDt = updatedDt;
+	}
+
+
 
 	public User(UserDto userDto) {
 		this.setId(userDto.getId());

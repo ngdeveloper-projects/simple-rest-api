@@ -36,6 +36,15 @@ public class UserServiceTest {
 		assertTrue(response.getId() != null && response.getId() == 101L);
 	}
 
+	@Test
+	public void testUpdate() {
+		UserDto userDto = new UserDto();
+		userDto.setId(18L);
+		userDto.setFirstName("Naveen kumar");
+		UserDto response = userService.update(userDto);
+		assertTrue(response.getId() != null && response.getId() == 101L);
+	}
+	
 	private User getMockedResponse() {
 		User user = new User();
 		user.setId(101L);

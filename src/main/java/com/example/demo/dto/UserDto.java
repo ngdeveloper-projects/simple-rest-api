@@ -20,6 +20,15 @@ public class UserDto {
 		
 	}
 	
+	
+	
+	public UserDto(Long id, String userName, String email, String password) {
+		this.id = id;
+		this.userName = userName;
+		this.email = email;
+		this.password = password;
+	}
+	
 	public UserDto(User user) {
 		this.setId(user.getId());
 		this.setUserName(user.getUserName());
@@ -34,6 +43,23 @@ public class UserDto {
 	}
 	
 	
+
+	public UserDto(Long id, String userName, String firstName, String lastName, String mobile, String email,
+			String password, String role, String status, Integer pincode) {
+		super();
+		this.id = id;
+		this.userName = userName;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.mobile = mobile;
+		this.email = email;
+		this.password = password;
+		this.role = role;
+		this.status = status;
+		this.pincode = pincode;
+	}
+
+
 
 	public Long getId() {
 		return id;
