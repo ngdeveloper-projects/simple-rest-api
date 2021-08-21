@@ -22,7 +22,7 @@ public class UserController {
 
 	@PostMapping("/")
 	public UserDto saveUser(@RequestBody UserDto userDto) {
-		System.out.println("adding logs");
+		System.out.println("adding logs saveuser post");
 		return userService.save(userDto);
 	}
 
