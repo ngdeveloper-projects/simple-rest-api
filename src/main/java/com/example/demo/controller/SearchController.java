@@ -16,6 +16,7 @@ public class SearchController {
 		List<String> popularSearchList = new ArrayList<>();
 		popularSearchList.add("Mobile");
 		popularSearchList.add("Laptop");
+		popularSearchList.add("Shoes");
 		popularSearchList.add("Headset");
 		popularSearchList.add("Formal Shirts");
 		return popularSearchList;
