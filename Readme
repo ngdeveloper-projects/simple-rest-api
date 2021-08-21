@@ -1,0 +1,8 @@
+Download from github -> Extract this project -> Import it as maven project in STS (spring tool suite)
+Xampp -> download and start mysql
+In workbench, connect localhost with 3306 port...
+And create database called upstac in mysql workbench.
+Run upstac.sql scripts in mysql workbench
+After mysql/workbench setups are done, then import Run as -> Spring Boot App
+Hit this from postman / browser:
+http://localhost:8080/upstac/v1/user/
