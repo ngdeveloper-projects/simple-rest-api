@@ -31,7 +31,7 @@ public class UserServiceTest {
 	@Test
 	public void testSave() {
 		UserDto userDto = new UserDto();
-		userDto.setFirstName("Naveen");
+		userDto.setFirstName("Naveen kumar");
 		UserDto response = userService.save(userDto);
 		assertTrue(response.getId() != null && response.getId() == 101L);
 	}
@@ -40,6 +40,7 @@ public class UserServiceTest {
 	public void testUpdate() {
 		UserDto userDto = new UserDto();
 		userDto.setId(18L);
+		userDto.setEmail("mail@mail.com");
 		userDto.setFirstName("Naveen kumar");
 		UserDto response = userService.update(userDto);
 		assertTrue(response.getId() != null && response.getId() == 101L);

@@ -28,13 +28,16 @@ public class UserService {
 	}
 
 	public UserDto update(UserDto userDto) {
+		System.out.println("update method starts");
 		User user = new User(userDto);
 		user = userRepository.save(user);
 		userDto = new UserDto(user);
+		System.out.println("update method ends");
 		return userDto;
 	}
 	
 	public List<UserDto> findAllUsers() {
+		System.out.println("findall starts");
 		List<User> users = userRepository.findAll();
 		List<UserDto> userDtoList = users.stream().map(UserDto::new).collect(Collectors.toList());
 		return userDtoList;
